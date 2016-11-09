@@ -29,34 +29,36 @@ if [ ! -f ./package.json ];
     echo -e "${COLORRED}${BOLD}ERROR: No package.json found${NOCOLOR}"
     npm init
     echo -e "${COLORGREEN}Installing npm dependencies..."
-    # Dependency Loop
+    # Dependency Loop ==========================================================
     for dependency in "${Dependencies[@]}"
     do
        :
        npm install $dependency --save
     done
-    # Dev Dependency Loop
+    # Dev Dependency Loop ======================================================
     for dependency in "${DevDependencies[@]}"
     do
        :
        npm install $dependency --save-dev
     done
+    # ==========================================================================
     echo -e "${COLORGREEN}NPM dependencies installed";
   else
     echo -e "${COLORGREEN}package.json found!"
     echo -e "${COLORGREEN}Installing npm dependencies..."
-    # Dependency Loop
+    # Dependency Loop ==========================================================
     for dependency in "${Dependencies[@]}"
     do
        :
        npm install $dependency --save
     done
-    # Dev Dependency Loop
+    # Dev Dependency Loop ======================================================
     for dependency in "${DevDependencies[@]}"
     do
        :
        npm install $dependency --save-dev
     done
+    # ==========================================================================
     echo -e "${COLORGREEN}NPM dependencies installed";
 fi
 
