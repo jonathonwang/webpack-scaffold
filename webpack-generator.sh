@@ -7,7 +7,7 @@ BOLD=$(tput bold) # Bold
 WEBPACKSCAFFOLDDIRECTORY=~/Documents/Builds/Scaffolds/webpack-project-scaffold # Scaffold Directory
 
 #NPM Dependencies Array
-Dependencies=(bootstrap-sass bootstrap jquery react react-dom @types/react @types/react-dom @types/jquery types/bootstrap)
+Dependencies=(bootstrap-sass bootstrap jquery react react-dom @types/react @types/react-dom @types/jquery @types/bootstrap)
 
 #NPM Dev Dependencies Array
 DevDependencies=(webpack webpack-notifier autoprefixer autoprefixer-loader babel-core babel-loader babel-preset-es2015 babel-preset-react css-loader extract-text-webpack-plugin node-sass precss sass-loader style-loader ts-loader typescript)
